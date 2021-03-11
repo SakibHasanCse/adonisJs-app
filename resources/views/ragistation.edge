@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdonisJS - A Modern Web Framework For Node.js</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        html,
+        body {
+            background-color: #F7F8FA;
+            font-family: 'Poppins', sans-serif;
+            height: 100vh;
+            color: #46444c;
+            position: relative;
+        }
+
+        body:before {
+            content: '';
+            background: #5A45FF;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            position: absolute;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            color: #5A45FF;
+            text-decoration: none;
+        }
+
+        main {
+            max-width: 620px;
+            margin: auto;
+            height: 100vh;
+            padding: 0 30px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .title {
+            font-size: 50px;
+            line-height: 50px;
+            margin-bottom: 10px;
+            color: #17161A;
+        }
+
+        .subtitle {
+            font-size: 26px;
+            margin-bottom: 40px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        main ul {
+            list-style: none;
+        }
+
+        main li {
+            margin-bottom: 5px;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        main li:before {
+            content: '—';
+            position: absolute;
+            left: 0;
+        }
+
+        main code {
+            font-size: 16px;
+            background: #e6e2ff;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">AdonisAPP</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="/login">login</a>
+                <a class="nav-item nav-link" href="/ragistation">Ragistation <span class="sr-only">(current)</span></a>
+
+            </div>
+        </div>
+    </nav>
+    <div class="container pt-5 mt-5">
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else.</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Name</label>
+                <input type="name" class="form-control" id="exampleInputPassword1" placeholder="name">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Ragistation</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
